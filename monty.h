@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <ctype.h>
+#include <string.h>
 
 /* Structures */
 
@@ -38,6 +40,37 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/**
+ * struct holder_s - Temp holder
+ * @input: Number that is input
+ * @command: Command
+ * @gfile: Global file holder
+ */
+
+typedef struct holder_s
+{
+	/*int mode = 1;*/
+	char *input;
+	char *command;
+	FILE *gfile;
+} holder_t;
+
+extern holder_t global;
+holder_t global;
+
 /* Function Prototypes */
+void reader(char *file);
+void getopc(stack_t **STACK, char *cmd, unsigned int lineno);
+int numcheck(char *string);
+void gfree(stack_t **STACK);
+
+/* OP Codes */
+void push(stack_t **STACK, unsigned int lineno);
+void pall(stack_t **STACK, unsigned int lineno);
+void pint(stack_t **STACK, unsigned int lineno);
+void pop(stack_t **STACK, unsigned int lineno);
+void swap(stack_t **STACK, unsigned int lineno);
+void add(stack_t **STACK, unsigned int lineno);
+void nop(stack_t **STACK, unsigned int lineno);
 
 #endif
