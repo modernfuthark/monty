@@ -13,7 +13,7 @@ void mod(stack_t **STACK, unsigned int lineno)
 
 	if (!STACK || !*STACK || !(*STACK)->next)
 	{
-		fprintf(stderr, "L%u: can't div, stack too short\n", lineno);
+		fprintf(stderr, "L%u: can't mod, stack too short\n", lineno);
 		gfree(STACK);
 		exit(EXIT_FAILURE);
 	}

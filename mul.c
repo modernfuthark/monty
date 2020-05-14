@@ -13,7 +13,7 @@ void mul(stack_t **STACK, unsigned int lineno)
 
 	if (!STACK || !*STACK || !(*STACK)->next)
 	{
-		fprintf(stderr, "L%u: can't add, stack too short\n", lineno);
+		fprintf(stderr, "L%u: can't mul, stack too short\n", lineno);
 		gfree(STACK);
 		exit(EXIT_FAILURE);
 	}
