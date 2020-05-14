@@ -72,5 +72,10 @@ void pop(stack_t **STACK, unsigned int lineno);
 void swap(stack_t **STACK, unsigned int lineno);
 void add(stack_t **STACK, unsigned int lineno);
 void nop(stack_t **STACK, unsigned int lineno);
+/* Advanced OP Codes */
+void sub(stack_t **STACK, unsigned int lineno);
+void mul(stack_t **STACK, unsigned int lineno);
+void divi(stack_t **STACK, unsigned int lineno);
+void mod(stack_t **STACK, unsigned int lineno);
 
 #endif

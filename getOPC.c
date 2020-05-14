@@ -19,6 +19,10 @@ void getopc(stack_t **STACK, char *cmd, unsigned int lineno)
 		{"swap", swap},
 		{"add", add},
 		{"nop", nop},
+		{"sub", sub},
+		{"div", divi},
+		{"mul", mul},
+		{"mod", mod},
 		{NULL, NULL}
 	};
 
