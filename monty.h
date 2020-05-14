@@ -52,7 +52,6 @@ typedef struct holder_s
 	/*int mode = 1;*/
 	char *input;
 	char *command;
-	FILE *gfile;
 } holder_t;
 
 extern holder_t global;

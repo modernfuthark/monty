@@ -21,7 +21,6 @@ void reader(char *file)
 		fprintf(stderr, "Error: Can't open file %s\n", file);
 		exit(EXIT_FAILURE);
 	}
-	global.gfile = stream;
 
 	while (getline(&buffer, &size, stream) != -1)
 	{
