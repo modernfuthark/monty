@@ -14,8 +14,6 @@ void gfree(stack_t **STACK)
 		return; /* No stack exists yet, ignore */
 	/* Free global struct */
 	free(global.command);
-	free(global.input);
-
 	while (*STACK)
 	{
 		temp = (*STACK)->next;
