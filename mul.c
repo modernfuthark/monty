@@ -20,7 +20,7 @@ void mul(stack_t **STACK, unsigned int lineno)
 
 	temp = *STACK;
 
-	temp->next->n = temp->n * temp->next->n;
+	temp->next->n = temp->next->n * temp->n;
 	*STACK = temp->next;
 
 	free(temp);
