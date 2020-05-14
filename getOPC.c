@@ -23,6 +23,7 @@ void getopc(stack_t **STACK, char *cmd, unsigned int lineno)
 		{"div", divi},
 		{"mul", mul},
 		{"mod", mod},
+		{"pchar", pchar},
 		{NULL, NULL}
 	};
 

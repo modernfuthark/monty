@@ -77,5 +77,7 @@ void sub(stack_t **STACK, unsigned int lineno);
 void mul(stack_t **STACK, unsigned int lineno);
 void divi(stack_t **STACK, unsigned int lineno);
 void mod(stack_t **STACK, unsigned int lineno);
+void pchar(stack_t **STACK, unsigned int lineno);
+
 
 #endif
